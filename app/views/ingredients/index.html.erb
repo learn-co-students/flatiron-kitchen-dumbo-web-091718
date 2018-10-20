@@ -1,0 +1,6 @@
+<h1>Ingredient Index</h1>
+
+ <% @ingredients.each do |ingredient| %>
+ <%= link_to ingredient.name, ingredient %><br>
+ Quantity: <%= ingredient.quantity %><br>
+ <% end %>

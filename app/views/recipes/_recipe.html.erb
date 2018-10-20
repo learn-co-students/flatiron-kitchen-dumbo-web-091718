@@ -1,0 +1,9 @@
+<h3><%= link_to recipe.name, recipe %></h3>
+Ingredients:<br>
+<ul>
+<% recipe.ingredients.each do |ingredient| %>
+<li>
+  <%= ingredient.name %>
+</li>
+<% end %>
+</ul>
