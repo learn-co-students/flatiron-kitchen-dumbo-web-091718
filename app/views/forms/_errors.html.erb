@@ -1,0 +1,5 @@
+<% if item.errors.any? %>
+  <% item.errors.full_messages do |msg| %>
+    <%= msg %>
+  <% end %>
+<% end %>
