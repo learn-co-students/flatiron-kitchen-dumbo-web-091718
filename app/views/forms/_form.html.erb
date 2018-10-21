@@ -1,0 +1,5 @@
+<%= form_for item do |f| %>
+  <p> <%= f.label :name %>
+  <%= f.text_field :name %></p>
+  <%= f.submit  "#{@ingredient.new_record? ? 'Create' : 'Update'} #{item.class}"%>
+<% end %>
